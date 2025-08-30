@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Orleans Weather</title>
+    <title>TyQuincia's Weather App</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+    <h1 class="text-center text-dark mt-5 p-5">Weather Dashboard</h1>
+    <div class="container bg-primary mt-5 d-flex justify-content-center border border-5 border-dark p-5">
+    <!--New Orleans Weather-->
     <div class="card" style="width: 18rem;">
-        <div class="card-body">
+        <div class="card-body bg-info">
             <h5 class="card-title">New Orleans Weather</h5>
             <p class="card-text">
                 Temperature: <span id="temp"></span>°C<br>
@@ -17,8 +20,44 @@
                 Weather Code: <span id="code"></span>
             </p>
         </div>
+        <button id="showWeather" class="btn btn-primary">Get New Orleans Weather</button>
+        <!--Atlanta Weather-->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body bg-warning">
+                <h5 class="card-title">Atlanta, GA Weather</h5>
+                <p class="card-text">
+                    Temperature: <span id="tempA"></span>°C<br>
+                    Wind Speed: <span id="windA"></span> km/h<br>
+                    Weather Code: <span id="codeA"></span>
+                </p>
+            </div>
+        </div>
+        <button id="showWeathera" class="btn btn-primary">Get Atlanta Weather</button>
+        <!--Seattle Weather-->
+        <div class="card" style="width: 18rem;">
+        <div class="card-body bg-success">
+            <h5 class="card-title">Seattle, WA Weather</h5>
+            <p class="card-text">
+                Temperature: <span id="temps"></span>°C<br>
+                Wind Speed: <span id="winds"></span> km/h<br>
+                Weather Code: <span id="codes"></span>
+            </p>
+        </div>
+        <button id="showWeathers" class="btn btn-primary">Get Seattle Weather</button>
+        <!--Baton Rouge Weather-->
+        <div class="card" style="width: 18rem;">
+        <div class="card-body bg-danger">
+            <h5 class="card-title">Baton Rouge,LA Weather</h5>
+            <p class="card-text">
+                Temperature: <span id="tempb"></span>°C<br>
+                Wind Speed: <span id="windb"></span> km/h<br>
+                Weather Code: <span id="codeb"></span>
+            </p>
+        </div>
+        <button id="showWeatherb" class="btn btn-primary">Get Baton Rouge Weather</button>
+    </div>
     </div>
     <script src="helpers.js"></script>
     <script src="script.js"></script>
-</body>
+</body> 
 </html>

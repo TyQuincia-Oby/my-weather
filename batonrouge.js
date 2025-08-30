@@ -26,9 +26,11 @@ var batonRougeWeather={
         "weathercode": 1
     }
 }
-
+onEvent("showWeatherb", "click", function(){
 // Display weather data
-setText("temp", batonRougeWeather.current_weather.temperature);
-setText("wind", batonRougeWeather.current_weather.windspeed);
-setText("code", batonRougeWeather.current_weather.weathercode);
+setText("tempb", batonRougeWeather.current_weather.temperature);
+setText("windb", batonRougeWeather.current_weather.windspeed);
+setText("codeb", batonRougeWeather.current_weather.weathercode);
+console.log(batonRougeWeather);
+});
 console.log(batonRougeWeather);

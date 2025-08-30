@@ -25,8 +25,12 @@ var seattleWeather={
         "weathercode": 0
     }
 };
+onEvent ("showWeathers", "click", function(){
 // Display weather data
-setText("temp", seattleWeather.current_weather.temperature);
-setText("wind", seattleWeather.current_weather.windspeed);
-setText("code", seattleWeather.current_weather.weathercode);
+setText("temps", seattleWeather.current_weather.temperature);
+setText("winds", seattleWeather.current_weather.windspeed);
+setText("codes", seattleWeather.current_weather.weathercode);
+console.log(seattleWeather);
+setScreen("seattle");
+});
 console.log(seattleWeather);

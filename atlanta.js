@@ -27,8 +27,11 @@ var atlantaWeather= {
     }
 }
     ; 
+onEvent ("showWeathera", "click", function(){
 // Display weather data
-setText("temp", atlantaWeather.current_weather.temperature);
-setText("wind", atlantaWeather.current_weather.windspeed);
-setText("code", atlantaWeather.current_weather.weathercode);
+setText("tempA", atlantaWeather.current_weather.temperature);
+setText("windA", atlantaWeather.current_weather.windspeed);
+setText("codeA", atlantaWeather.current_weather.weathercode);
+console.log(atlantaWeather);
+});
 console.log(atlantaWeather);
